@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammad Hadi Mehdizavareh – AI & Data Science Consultant</title>
+  <meta name="description" content="AI & Data Science consultant specializing in predictive modeling, healthcare AI, time‑series, and ML system design. Available for consulting and project outsourcing." />
+  <meta property="og:title" content="Mohammad Hadi Mehdizavareh – AI & Data Science Consultant" />
+  <meta property="og:description" content="Predictive modeling • Healthcare AI • Time‑series • ML systems" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0B1220" />
+  
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: {
+              900: '#0B1220',
+              800: '#111827',
+              700: '#1f2937',
+            },
+          },
+          boxShadow: {
+            'glow': '0 0 0 1px rgba(59,130,246,.3), 0 10px 25px -10px rgba(59,130,246,.45)',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Subtle grid/circuit motif */
+    .tech-bg {
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+<body class="bg-base-900 text-slate-200 selection:bg-blue-600/30">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-base-900/70">
+    <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-wide text-slate-100">Hadi Mehdizavareh</a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-white/90" href="#services">Services</a>
+        <a class="hover:text-white/90" href="#work">Work</a>
+        <a class="hover:text-white/90" href="#publications">Publications</a>
+        <a class="hover:text-white/90" href="#awards">Awards</a>
+        <a class="hover:text-white/90" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-4 py-2 text-sm font-semibold shadow-glow focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <span>Book a consult</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 opacity-30 bg-gradient-to-br from-blue-500/30 via-violet-600/20 to-fuchsia-600/10 blur-2xl"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight text-white">
+            Mohammad Hadi Mehdizavareh
+          </h1>
+          <p class="mt-3 text-lg sm:text-xl text-slate-300">
+            AI & Data Science Consultant • Predictive Modeling • Healthcare AI • Time‑series
+          </p>
+          <p class="mt-4 max-w-xl text-slate-300">
+            PhD researcher at Aalborg University with 7+ years of experience across ML, signal processing, and data platforms. I design and deliver interpretable predictive systems for critical care and beyond.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a href="#contact" class="rounded-xl bg-blue-600 px-5 py-3 font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Discuss a project</a>
+            <a href="assets/Mehdizavareh_CV.pdf" class="rounded-xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-blue-400">Download CV</a>
+          </div>
+          <div class="mt-6 flex items-center gap-4 text-slate-300">
+            <a class="hover:text-white/90" aria-label="Email" href="mailto:mhme@cs.aau.dk">Email</a>
+            <span aria-hidden="true">•</span>
+            <a class="hover:text-white/90" aria-label="Phone" href="tel:+4531878309">(+45) 31878309</a>
+            <span class="hidden sm:inline" aria-hidden="true">•</span>
+            <a class="hidden sm:inline hover:text-white/90" href="https://www.linkedin.com/in/hadimehdizavareh/" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="hidden sm:inline" aria-hidden="true">•</span>
+            <a class="hidden sm:inline hover:text-white/90" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <span class="hidden sm:inline" aria-hidden="true">•</span>
+            <a class="hidden sm:inline hover:text-white/90" href="https://github.com/zavareh89" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="tech-bg rounded-[2rem] border border-white/10 bg-base-800/60 p-8 shadow-2xl">
+          <h2 class="text-xl font-semibold">How I can help</h2>
+          <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
+              <div class="font-semibold">Predictive modeling</div>
+              <p class="text-sm text-slate-300 mt-1">Time‑series, EHR, tabular & multimodal ML tailored to your data.</p>
+            </li>
+            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
+              <div class="font-semibold">AI system design</div>
+              <p class="text-sm text-slate-300 mt-1">From discovery to deployment: experiments, evaluation, and MLOps ready.</p>
+            </li>
+            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
+              <div class="font-semibold">Healthcare AI</div>
+              <p class="text-sm text-slate-300 mt-1">Clinically relevant models with an emphasis on interpretability.</p>
+            </li>
+            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
+              <div class="font-semibold">Consulting & mentoring</div>
+              <p class="text-sm text-slate-300 mt-1">Project scoping, code reviews, and research‑backed guidance.</p>
+            </li>
+          </ul>
+          <p class="mt-4 text-sm text-slate-400">Available for remote or on‑site engagements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (compact recap) -->
+  <section id="services" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Services</h2>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Problem discovery</h3>
+          <p class="mt-2 text-sm text-slate-300">Define use‑cases, success metrics, data strategy, and feasibility.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Modeling & evaluation</h3>
+          <p class="mt-2 text-sm text-slate-300">Baselines → advanced models; rigorous experiments and reports.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Prototyping</h3>
+          <p class="mt-2 text-sm text-slate-300">Interactive demos & dashboards to align stakeholders.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Handoff & scaling</h3>
+          <p class="mt-2 text-sm text-slate-300">Clean code, documentation, and pathways to production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / CASE STUDIES -->
+  <section id="work" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Featured work</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <!-- Project 1 -->
+        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+          <div class="text-sm text-blue-300 font-semibold">Healthcare • Time‑series</div>
+          <h3 class="mt-1 text-xl font-semibold text-white">Glucose Prediction for ICU Patients</h3>
+          <p class="mt-2 text-slate-300">Irregular EHR time‑series modeling with integrated representation; tackles sampling inconsistencies and large‑scale data.</p>
+          <div class="mt-3 flex flex-wrap gap-3 text-sm">
+            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://arxiv.org/abs/2411.01418" target="_blank" rel="noopener">Paper</a>
+            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/zavareh89/MITST" target="_blank" rel="noopener">Code</a>
+            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="http://130.225.37.30:8501/" target="_blank" rel="noopener">Live demo</a>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+          <div class="text-sm text-blue-300 font-semibold">Vision • Retrieval</div>
+          <h3 class="mt-1 text-xl font-semibold text-white">Efficient / Graph Hashing for Image Search</h3>
+          <p class="mt-2 text-slate-300">Reproducible implementations of competitive spectral hashing methods and a non‑alternating graph hashing algorithm for large‑scale retrieval.</p>
+          <div class="mt-3 flex flex-wrap gap-3 text-sm">
+            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/sobhanhemati/Efficient-Spectral-Hashing-ESH-" target="_blank" rel="noopener">ESH (code)</a>
+            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/zavareh89/unsupervised-hashing" target="_blank" rel="noopener">Spectral hashing suite</a>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+          <div class="text-sm text-blue-300 font-semibold">Recommenders • Data platform</div>
+          <h3 class="mt-1 text-xl font-semibold text-white">Content‑based Movie/TV Recommender Startup</h3>
+          <p class="mt-2 text-slate-300">Designed unsupervised recommendation algorithms; engineered a PostgreSQL data model and Python/Django ETL with logging & caching.</p>
+        </article>
+        <!-- Project 4 -->
+        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+          <div class="text-sm text-blue-300 font-semibold">BCI • Signal processing</div>
+          <h3 class="mt-1 text-xl font-semibold text-white">Knowledge Translation for SSVEP BCIs</h3>
+          <p class="mt-2 text-slate-300">Used cross‑subject information to improve target detection and increased ITR; published in PLOS ONE.</p>
+            <div class="mt-3 flex flex-wrap gap-3 text-sm">
+              <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://doi.org/10.1371/journal.pone.0226048" target="_blank" rel="noopener">Paper</a>
+            </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Selected publications</h2>
+      <ol class="mt-6 space-y-4 list-decimal pl-6">
+        <li class="leading-relaxed">
+          <span class="font-semibold">Enhancing glucose level prediction of ICU patients through irregular time‑series analysis and integrated representation</span>. Computational and Structural Biotechnology Journal, 2025 (accepted, in press). <a class="underline decoration-blue-400/50 underline-offset-4" href="https://arxiv.org/abs/2411.01418" target="_blank" rel="noopener">arXiv</a>
+        </li>
+        <li class="leading-relaxed">
+          <span class="font-semibold">Subject‑independent information for SSVEP‑based BCIs</span>. PLOS ONE, 2020. <a class="underline decoration-blue-400/50 underline-offset-4" href="https://doi.org/10.1371/journal.pone.0226048" target="_blank" rel="noopener">DOI</a>
+        </li>
+        <li class="leading-relaxed">
+          <span class="font-semibold">A non‑alternating graph hashing algorithm for large‑scale image search</span>. Computer Vision and Image Understanding, 2022.
+        </li>
+        <li class="leading-relaxed">
+          <span class="font-semibold">A simple supervised hashing algorithm using projected gradient and oppositional weights</span>. ICIP, 2021.
+        </li>
+      </ol>
+      <p class="mt-4 text-sm text-slate-400">More on <a class="underline decoration-blue-400/50 underline-offset-4" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="py-12">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Awards & achievements</h2>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Kaggle Bronze Medal – Top 7% (Severstal: Steel Defect Detection), 2019</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize – National BCI Competition (70 teams), 2018</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize – Stock price prediction challenge (48 teams), 2017</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Top 1% – National MSc entrance exam (Biomedical), 2015</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-blue-500/10 to-violet-600/10 p-8 md:p-12">
+        <div class="grid gap-10 md:grid-cols-2">
+          <div>
+            <h2 class="text-2xl font-bold">Let’s build AI solutions together</h2>
+            <p class="mt-3 text-slate-300">Tell me about your use‑case, data, and success metric. I’ll reply within 1–2 business days with next steps.</p>
+            <ul class="mt-6 space-y-2 text-slate-300">
+              <li><strong>Email:</strong> <a class="underline decoration-blue-400/50 underline-offset-4" href="mailto:mhme@cs.aau.dk">mhme@cs.aau.dk</a></li>
+              <li><strong>Phone:</strong> <a class="underline decoration-blue-400/50 underline-offset-4" href="tel:+4531878309">(+45) 31878309</a></li>
+              <li><strong>Location:</strong> Aalborg, Denmark (open to remote/onsite)</li>
+            </ul>
+          </div>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+            <!-- Replace the action with your Formspree/Netlify endpoint -->
+            <div>
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">Project / Message</label>
+              <textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Send</button>
+            <p class="text-xs text-slate-400">No spam. Your details are used only to contact you about this inquiry.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-8">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <div>© <span id="year"></span> Mohammad Hadi Mehdizavareh</div>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-slate-200" href="https://www.linkedin.com/in/hadimehdizavareh/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a class="hover:text-slate-200" href="https://github.com/zavareh89" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a class="hover:text-slate-200" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">Scholar</a>
+        <a class="hover:text-slate-200" href="https://www.kaggle.com/zavareh89" target="_blank" rel="noopener" aria-label="Kaggle">Kaggle</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
