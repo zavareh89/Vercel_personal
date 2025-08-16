@@ -3,218 +3,253 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohammad Hadi Mehdizavareh – AI & Data Science Consultant</title>
-  <meta name="description" content="AI & Data Science consultant specializing in predictive modeling, healthcare AI, time‑series, and ML system design. Available for consulting and project outsourcing." />
-  <meta property="og:title" content="Mohammad Hadi Mehdizavareh – AI & Data Science Consultant" />
+  <title>Hadi Mehdizavareh — AI & Data Science Consultant</title>
+  <meta name="description" content="Consultant specializing in predictive modeling, healthcare AI, time‑series and ML systems. I scope, build, and ship interpretable models that move business & clinical metrics." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="theme-color" content="#0B1220" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Hadi Mehdizavareh — AI & Data Science Consultant" />
   <meta property="og:description" content="Predictive modeling • Healthcare AI • Time‑series • ML systems" />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0B1220" />
-  
+  <meta property="og:image" content="/assets/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            base: {
-              900: '#0B1220',
-              800: '#111827',
-              700: '#1f2937',
-            },
-          },
-          boxShadow: {
-            'glow': '0 0 0 1px rgba(59,130,246,.3), 0 10px 25px -10px rgba(59,130,246,.45)',
-          },
+          colors: { base: { 900:'#0B1220', 800:'#111827', 700:'#1f2937' } },
+          boxShadow: { glow: '0 0 0 1px rgba(59,130,246,.25), 0 10px 25px -10px rgba(59,130,246,.45)' }
         }
       }
     }
   </script>
   <style>
-    /* Subtle grid/circuit motif */
-    .tech-bg {
-      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0);
-      background-size: 20px 20px;
-    }
+    .tech-bg { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.05) 1px, transparent 0); background-size: 20px 20px; }
+    @media (prefers-reduced-motion: reduce){ *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; } }
   </style>
+
+  <!-- Schema.org (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Hadi Mehdizavareh",
+    "jobTitle":"AI & Data Science Consultant",
+    "affiliation":{"@type":"Organization","name":"Aalborg University"},
+    "email":"mailto:mhme@cs.aau.dk",
+    "url":"https://example.com/",
+    "sameAs":[
+      "https://www.linkedin.com/in/hadimehdizavareh/",
+      "https://scholar.google.com/citations?user=-PwiG1oAAAAJ",
+      "https://github.com/zavareh89"
+    ]
+  }
+  </script>
 </head>
 <body class="bg-base-900 text-slate-200 selection:bg-blue-600/30">
-  <!-- NAV -->
-  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-base-900/70">
-    <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+  <!-- Skip link + NAV -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-blue-600 text-white px-3 py-2 rounded">Skip to content</a>
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-base-900/70 border-b border-white/10">
+    <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between" aria-label="Primary">
       <a href="#top" class="font-semibold tracking-wide text-slate-100">Hadi Mehdizavareh</a>
       <div class="hidden md:flex items-center gap-6 text-sm">
         <a class="hover:text-white/90" href="#services">Services</a>
-        <a class="hover:text-white/90" href="#work">Work</a>
+        <a class="hover:text-white/90" href="#work">Case studies</a>
+        <a class="hover:text-white/90" href="#testimonials">Testimonials</a>
+        <a class="hover:text-white/90" href="#process">Process</a>
         <a class="hover:text-white/90" href="#publications">Publications</a>
         <a class="hover:text-white/90" href="#awards">Awards</a>
+        <a class="hover:text-white/90" href="#faq">FAQ</a>
         <a class="hover:text-white/90" href="#contact">Contact</a>
       </div>
-      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-4 py-2 text-sm font-semibold shadow-glow focus:outline-none focus:ring-2 focus:ring-blue-400">
-        <span>Book a consult</span>
-      </a>
+      <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-violet-600 px-4 py-2 text-sm font-semibold shadow-glow">Book a consult</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section id="top" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 opacity-30 bg-gradient-to-br from-blue-500/30 via-violet-600/20 to-fuchsia-600/10 blur-2xl"></div>
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight text-white">
-            Mohammad Hadi Mehdizavareh
-          </h1>
-          <p class="mt-3 text-lg sm:text-xl text-slate-300">
-            AI & Data Science Consultant • Predictive Modeling • Healthcare AI • Time‑series
-          </p>
-          <p class="mt-4 max-w-xl text-slate-300">
-            PhD researcher at Aalborg University with 7+ years of experience across ML, signal processing, and data platforms. I design and deliver interpretable predictive systems for critical care and beyond.
-          </p>
-          <div class="mt-6 flex flex-wrap items-center gap-3">
-            <a href="#contact" class="rounded-xl bg-blue-600 px-5 py-3 font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Discuss a project</a>
-            <a href="assets/Mehdizavareh_CV_June_2025.pdf" class="rounded-xl border border-white/20 px-5 py-3 font-semibold hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-blue-400">Download CV</a>
-          </div>
-          <div class="mt-6 flex items-center gap-4 text-slate-300">
-            <a class="hover:text-white/90" aria-label="Email" href="mailto:mhme@cs.aau.dk">Email</a>
-            <span aria-hidden="true">•</span>
-            <a class="hover:text-white/90" aria-label="Phone" href="tel:+4531878309">(+45) 31878309</a>
-            <span class="hidden sm:inline" aria-hidden="true">•</span>
-            <a class="hidden sm:inline hover:text-white/90" href="https://www.linkedin.com/in/hadimehdizavareh/" target="_blank" rel="noopener">LinkedIn</a>
-            <span class="hidden sm:inline" aria-hidden="true">•</span>
-            <a class="hidden sm:inline hover:text-white/90" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-            <span class="hidden sm:inline" aria-hidden="true">•</span>
-            <a class="hidden sm:inline hover:text-white/90" href="https://github.com/zavareh89" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-        <div class="tech-bg rounded-[2rem] border border-white/10 bg-base-800/60 p-8 shadow-2xl">
-          <h2 class="text-xl font-semibold">How I can help</h2>
-          <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
-              <div class="font-semibold">Predictive modeling</div>
-              <p class="text-sm text-slate-300 mt-1">Time‑series, EHR, tabular & multimodal ML tailored to your data.</p>
-            </li>
-            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
-              <div class="font-semibold">AI system design</div>
-              <p class="text-sm text-slate-300 mt-1">From discovery to deployment: experiments, evaluation, and MLOps ready.</p>
-            </li>
-            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
-              <div class="font-semibold">Healthcare AI</div>
-              <p class="text-sm text-slate-300 mt-1">Clinically relevant models with an emphasis on interpretability.</p>
-            </li>
-            <li class="rounded-xl border border-white/10 p-4 bg-white/[0.03]">
-              <div class="font-semibold">Consulting & mentoring</div>
-              <p class="text-sm text-slate-300 mt-1">Project scoping, code reviews, and research‑backed guidance.</p>
-            </li>
+  <main id="main">
+  <section id="top" class="relative overflow-hidden py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-white">I build interpretable ML systems that ship</h1>
+      <p class="mt-4 max-w-3xl mx-auto text-slate-300">AI & Data Science consultant; PhD candidate at Aalborg University. 7+ years in predictive modeling, healthcare AI, time‑series, recommenders, and signal processing. Published in CSBJ, CVIU, ICIP, and PLOS ONE. Kaggle medalist; reviewer for SIGMOD, ICDE, and VLDB.</p>
+      <ul class="mt-4 text-slate-300 space-y-1 text-sm list-disc text-left max-w-xl mx-auto pl-5">
+        <li>Time‑series (EHR, IoT, tabular) • Uncertainty • Model monitoring</li>
+        <li>MLOps‑ready code, reports, and handoff your team can own</li>
+        <li>Built for outsourcing PMs & hiring managers: clear scope, timelines, and updates</li>
+      </ul>
+      <div class="mt-6 flex justify-center gap-3">
+        <a href="#contact" class="rounded-xl bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500">Book a consult</a>
+        <a href="assets/Mehdizavareh_CV_June_2025.pdf" class="rounded-xl border border-white/20 px-6 py-3 font-semibold hover:bg-white/5">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="py-6 border-y border-white/10">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-sm text-slate-400">Trusted by / Featured in</p>
+      <div class="mt-3 grid grid-cols-2 sm:grid-cols-5 gap-4 opacity-80">
+        <div class="py-2 border border-white/5 rounded-xl">CSBJ (2025)</div>
+        <div class="py-2 border border-white/5 rounded-xl">PLOS ONE</div>
+        <div class="py-2 border border-white/5 rounded-xl">CVIU</div>
+        <div class="py-2 border border-white/5 rounded-xl">Kaggle Top 7% (154/2435)</div>
+        <div class="py-2 border border-white/5 rounded-xl">Reviewer: SIGMOD/ICDE/VLDB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Services & outcomes</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Predictive modeling</h3>
+          <p class="mt-2 text-sm text-slate-300">Time‑series (irregular sampling), tabular, multimodal. Emphasis on interpretability & uncertainty.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc pl-5">
+            <li>Win: higher AUROC/PR, fewer false alarms</li>
+            <li>Artifacts: codebase, experiment report, model card</li>
           </ul>
-          <p class="mt-4 text-sm text-slate-400">Available for remote or on‑site engagements.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Clinical & regulated AI</h3>
+          <p class="mt-2 text-sm text-slate-300">EHR/ICU modeling; clinician‑in‑the‑loop; privacy‑first.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc pl-5">
+            <li>Win: decision support clinicians can trust</li>
+            <li>Artifacts: validation plan, bias & drift checks</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
+          <h3 class="font-semibold">Data platform & handoff</h3>
+          <p class="mt-2 text-sm text-slate-300">Schema design, ETL, experiment tracking, monitoring hooks.</p>
+          <ul class="mt-3 text-sm text-slate-300 list-disc pl-5">
+            <li>Win: reproducible workflows, faster iteration</li>
+            <li>Artifacts: docs, dashboards, onboarding guide</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES (compact recap) -->
-  <section id="services" class="py-12">
+  <!-- CASE STUDIES -->
+  <section id="work" class="py-14">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight">Services</h2>
-      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
-          <h3 class="font-semibold">Problem discovery</h3>
-          <p class="mt-2 text-sm text-slate-300">Define use‑cases, success metrics, data strategy, and feasibility.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
-          <h3 class="font-semibold">Modeling & evaluation</h3>
-          <p class="mt-2 text-sm text-slate-300">Baselines → advanced models; rigorous experiments and reports.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
-          <h3 class="font-semibold">Prototyping</h3>
-          <p class="mt-2 text-sm text-slate-300">Interactive demos & dashboards to align stakeholders.</p>
-        </div>
-        <div class="rounded-2xl border border-white/10 p-6 bg-gradient-to-b from-white/[0.04] to-transparent">
-          <h3 class="font-semibold">Handoff & scaling</h3>
-          <p class="mt-2 text-sm text-slate-300">Clean code, documentation, and pathways to production.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK / CASE STUDIES -->
-  <section id="work" class="py-12">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight">Featured work</h2>
+      <h2 class="text-2xl font-bold tracking-tight">Highlighted work</h2>
       <div class="mt-6 grid gap-6 md:grid-cols-2">
-        <!-- Project 1 -->
-        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+        <article class="rounded-2xl border border-white/10 bg-base-800/60 p-6">
           <div class="text-sm text-blue-300 font-semibold">Healthcare • Time‑series</div>
-          <h3 class="mt-1 text-xl font-semibold text-white">Glucose Prediction for ICU Patients</h3>
-          <p class="mt-2 text-slate-300">Irregular EHR time‑series modeling with integrated representation; tackles sampling inconsistencies and large‑scale data.</p>
+          <h3 class="mt-1 text-xl font-semibold">Glucose prediction for ICU patients</h3>
+          <p class="mt-2 text-slate-300">Irregular EHR modeling with integrated representation; built proof‑of‑concept demo for clinicians.</p>
+          <ul class="mt-2 text-sm text-slate-300 list-disc pl-5">
+            <li><em>Evidence:</em> CSBJ 2025 (in press); live demo available</li>
+            <li><em>Role:</em> Lead modeling & evaluation</li>
+          </ul>
           <div class="mt-3 flex flex-wrap gap-3 text-sm">
-            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://arxiv.org/abs/2411.01418" target="_blank" rel="noopener">Paper</a>
-            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/zavareh89/MITST" target="_blank" rel="noopener">Code</a>
-            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="http://130.225.37.30:8501/" target="_blank" rel="noopener">Live demo</a>
+            <a href="https://arxiv.org/abs/2411.01418" class="underline decoration-blue-400/50">Paper</a>
+            <a href="https://github.com/zavareh89/MITST" class="underline decoration-blue-400/50">Code</a>
+            <a href="http://130.225.37.30:8501/" class="underline decoration-blue-400/50">Demo</a>
           </div>
         </article>
-        <!-- Project 2 -->
-        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+        <article class="rounded-2xl border border-white/10 bg-base-800/60 p-6">
           <div class="text-sm text-blue-300 font-semibold">Vision • Retrieval</div>
-          <h3 class="mt-1 text-xl font-semibold text-white">Efficient / Graph Hashing for Image Search</h3>
-          <p class="mt-2 text-slate-300">Reproducible implementations of competitive spectral hashing methods and a non‑alternating graph hashing algorithm for large‑scale retrieval.</p>
+          <h3 class="mt-1 text-xl font-semibold">Graph hashing for image search</h3>
+          <p class="mt-2 text-slate-300">Reproducible spectral hashing implementations and a non‑alternating graph hashing algorithm.</p>
+          <ul class="mt-2 text-sm text-slate-300 list-disc pl-5">
+            <li><em>Evidence:</em> Peer‑reviewed: CVIU 2022, ICIP 2021</li>
+          </ul>
           <div class="mt-3 flex flex-wrap gap-3 text-sm">
-            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/sobhanhemati/Efficient-Spectral-Hashing-ESH-" target="_blank" rel="noopener">ESH (code)</a>
-            <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://github.com/zavareh89/unsupervised-hashing" target="_blank" rel="noopener">Spectral hashing suite</a>
+            <a href="https://github.com/sobhanhemati/Efficient-Spectral-Hashing-ESH-" class="underline decoration-blue-400/50">ESH code</a>
+            <a href="https://github.com/zavareh89/unsupervised-hashing" class="underline decoration-blue-400/50">Hashing suite</a>
           </div>
         </article>
-        <!-- Project 3 -->
-        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
-          <div class="text-sm text-blue-300 font-semibold">Recommenders • Data platform</div>
-          <h3 class="mt-1 text-xl font-semibold text-white">Content‑based Movie/TV Recommender Startup</h3>
-          <p class="mt-2 text-slate-300">Designed unsupervised recommendation algorithms; engineered a PostgreSQL data model and Python/Django ETL with logging & caching.</p>
+        <article class="rounded-2xl border border-white/10 bg-base-800/60 p-6">
+          <div class="text-sm text-blue-300 font-semibold">Startup • Recommenders</div>
+          <h3 class="mt-1 text-xl font-semibold">Movie/TV recommendation platform</h3>
+          <p class="mt-2 text-slate-300">Co‑founded startup; designed PostgreSQL schema; built Python/Django ETL with logging & caching.</p>
+          <ul class="mt-2 text-sm text-slate-300 list-disc pl-5">
+            <li><em>Outcome:</em> Delivered functional MVP ready for iteration</li>
+          </ul>
         </article>
-        <!-- Project 4 -->
-        <article class="group rounded-2xl border border-white/10 bg-base-800/60 p-6 hover:shadow-glow transition-shadow">
+        <article class="rounded-2xl border border-white/10 bg-base-800/60 p-6">
           <div class="text-sm text-blue-300 font-semibold">BCI • Signal processing</div>
-          <h3 class="mt-1 text-xl font-semibold text-white">Knowledge Translation for SSVEP BCIs</h3>
-          <p class="mt-2 text-slate-300">Used cross‑subject information to improve target detection and increased ITR; published in PLOS ONE.</p>
-            <div class="mt-3 flex flex-wrap gap-3 text-sm">
-              <a class="underline decoration-blue-400/50 underline-offset-4 hover:text-white" href="https://doi.org/10.1371/journal.pone.0226048" target="_blank" rel="noopener">Paper</a>
-            </div>
+          <h3 class="mt-1 text-xl font-semibold">Knowledge translation for SSVEP BCIs</h3>
+          <p class="mt-2 text-slate-300">Used cross‑subject information to improve target detection; increased ITR.</p>
+          <ul class="mt-2 text-sm text-slate-300 list-disc pl-5">
+            <li><em>Outcome:</em> ~+10% ITR over best baseline</li>
+          </ul>
+          <a href="https://doi.org/10.1371/journal.pone.0226048" class="mt-3 inline-block underline decoration-blue-400/50 text-sm">Paper</a>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">What collaborators say</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <figure class="rounded-2xl border border-white/10 bg-base-800/60 p-6"><blockquote class="text-slate-300">“Hadi’s ICU prediction work showed a clear vision for clinically‑aware AI. His demo was impactful for stakeholder engagement.”</blockquote><figcaption class="mt-3 text-sm text-slate-400">— Academic supervisor, Aalborg University</figcaption></figure>
+        <figure class="rounded-2xl border border-white/10 bg-base-800/60 p-6"><blockquote class="text-slate-300">“Reliable, thorough, and outcome‑focused. Delivered clean code and strong documentation for our recommender prototype.”</blockquote><figcaption class="mt-3 text-sm text-slate-400">— Startup co‑founder</figcaption></figure>
+        <figure class="rounded-2xl border border-white/10 bg-base-800/60 p-6"><blockquote class="text-slate-300">“Strong collaboration and communication with deep expertise in predictive modeling.”</blockquote><figcaption class="mt-3 text-sm text-slate-400">— Research collaborator</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS / PRICING -->
+  <section id="process" class="py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">Process & engagement</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-4">
+        <div class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><h3 class="font-semibold">1) Discovery Sprint</h3><p class="mt-2 text-sm text-slate-300">1–2 weeks to clarify use‑case, data, and success metrics.</p><p class="mt-3 text-xs text-slate-400">Deliverables: roadmap, baselines, feasibility memo.</p></div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><h3 class="font-semibold">2) Feasibility Study</h3><p class="mt-2 text-sm text-slate-300">3–6 weeks to prototype, run ablations, quantify impact.</p><p class="mt-3 text-xs text-slate-400">Deliverables: code repo, experiment report, model card.</p></div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><h3 class="font-semibold">3) Pilot / Demo</h3><p class="mt-2 text-sm text-slate-300">Interactive app or API; monitoring hooks.</p><p class="mt-3 text-xs text-slate-400">Deliverables: demo, dashboard, handoff guide.</p></div>
+        <div class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><h3 class="font-semibold">4) Productionization</h3><p class="mt-2 text-sm text-slate-300">Harden the solution: tests, CI, drift checks, observability.</p><p class="mt-3 text-xs text-slate-400">Deliverables: deployable service, runbook, metrics plan.</p></div>
+      </div>
+      <p class="mt-6 text-sm text-slate-400">Pricing: contact for quote. Happy to start with a small paid discovery to de‑risk.</p>
     </div>
   </section>
 
   <!-- PUBLICATIONS -->
-  <section id="publications" class="py-12">
+  <section id="publications" class="py-14">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight">Selected publications</h2>
       <ol class="mt-6 space-y-4 list-decimal pl-6">
-        <li class="leading-relaxed">
-          <span class="font-semibold">Enhancing glucose level prediction of ICU patients through irregular time‑series analysis and integrated representation</span>. Computational and Structural Biotechnology Journal, 2025 (accepted, in press). <a class="underline decoration-blue-400/50 underline-offset-4" href="https://arxiv.org/abs/2411.01418" target="_blank" rel="noopener">arXiv</a>
-        </li>
-        <li class="leading-relaxed">
-          <span class="font-semibold">Subject‑independent information for SSVEP‑based BCIs</span>. PLOS ONE, 2020. <a class="underline decoration-blue-400/50 underline-offset-4" href="https://doi.org/10.1371/journal.pone.0226048" target="_blank" rel="noopener">DOI</a>
-        </li>
-        <li class="leading-relaxed">
-          <span class="font-semibold">A non‑alternating graph hashing algorithm for large‑scale image search</span>. Computer Vision and Image Understanding, 2022.
-        </li>
-        <li class="leading-relaxed">
-          <span class="font-semibold">A simple supervised hashing algorithm using projected gradient and oppositional weights</span>. ICIP, 2021.
-        </li>
+        <li><strong>Enhancing glucose level prediction of ICU patients through irregular time‑series analysis and integrated representation</strong>. CSBJ, 2025 (in press). <a href="https://arxiv.org/abs/2411.01418" class="underline decoration-blue-400/50">arXiv</a></li>
+        <li><strong>Subject‑independent information for SSVEP‑based BCIs</strong>. PLOS ONE, 2020. <a href="https://doi.org/10.1371/journal.pone.0226048" class="underline decoration-blue-400/50">DOI</a></li>
+        <li><strong>A non‑alternating graph hashing algorithm for large‑scale image search</strong>. CVIU, 2022.</li>
+        <li><strong>A simple supervised hashing algorithm using projected gradient and oppositional weights</strong>. ICIP, 2021.</li>
       </ol>
-      <p class="mt-4 text-sm text-slate-400">More on <a class="underline decoration-blue-400/50 underline-offset-4" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      <p class="mt-4 text-sm text-slate-400">More on <a href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" class="underline decoration-blue-400/50">Google Scholar</a>.</p>
     </div>
   </section>
 
   <!-- AWARDS -->
-  <section id="awards" class="py-12">
+  <section id="awards" class="py-14">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-bold tracking-tight">Awards & achievements</h2>
       <ul class="mt-6 grid gap-4 sm:grid-cols-2">
-        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Kaggle Bronze Medal – Top 7% (Severstal: Steel Defect Detection), 2019</li>
-        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize – National BCI Competition (70 teams), 2018</li>
-        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize – Stock price prediction challenge (48 teams), 2017</li>
-        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Top 1% – National MSc entrance exam (Biomedical), 2015</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Kaggle Bronze — Top 7% (154/2435, Severstal Steel Defect Detection), 2019</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize — National BCI Competition (70 teams), 2018</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">3rd prize — Stock price prediction challenge (48 teams), 2017</li>
+        <li class="rounded-xl border border-white/10 bg-base-800/60 p-5">Top 1% — National MSc entrance exam (Biomedical), 2015</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight">FAQs</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <details class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><summary class="font-semibold cursor-pointer">Do you sign NDAs? How do you handle data privacy?</summary><p class="mt-3 text-slate-300">Yes. I follow least‑privilege access, encrypted storage, and can work with synthetic data when needed. Compliance: GDPR only; I align with EU data‑processing requirements and clinical governance where applicable.</p></details>
+        <details class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><summary class="font-semibold cursor-pointer">What’s your typical stack?</summary><p class="mt-3 text-slate-300">Python (PyTorch, scikit‑learn), time‑series libs, Postgres, Pandas/Polars; Weights & Biases; Streamlit/FastAPI for demos; Docker.</p></details>
+        <details class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><summary class="font-semibold cursor-pointer">How do we start?</summary><p class="mt-3 text-slate-300">Short intro call to align on scope and success metrics → paid discovery sprint to de‑risk before larger commitments.</p></details>
+        <details class="rounded-2xl border border-white/10 p-6 bg-base-800/60"><summary class="font-semibold cursor-pointer">Availability?</summary><p class="mt-3 text-slate-300">Limited client slots while finishing PhD; part‑time retainers or project blocks work best.</p></details>
+      </div>
     </div>
   </section>
 
@@ -225,51 +260,39 @@
         <div class="grid gap-10 md:grid-cols-2">
           <div>
             <h2 class="text-2xl font-bold">Let’s build AI solutions together</h2>
-            <p class="mt-3 text-slate-300">Tell me about your use‑case, data, and success metric. I’ll reply within 1–2 business days with next steps.</p>
+            <p class="mt-3 text-slate-300">I reply within 1–2 business days. GDPR‑compliant workflows by default.</p>
             <ul class="mt-6 space-y-2 text-slate-300">
-              <li><strong>Email:</strong> <a class="underline decoration-blue-400/50 underline-offset-4" href="mailto:mhme@cs.aau.dk">mhme@cs.aau.dk</a></li>
-              <li><strong>Phone:</strong> <a class="underline decoration-blue-400/50 underline-offset-4" href="tel:+4531878309">(+45) 31878309</a></li>
-              <li><strong>Location:</strong> Aalborg, Denmark (open to remote/onsite)</li>
+              <li><strong>Email:</strong> <a href="mailto:mhme@cs.aau.dk" class="underline decoration-blue-400/50">mhme@cs.aau.dk</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+4531878309" class="underline decoration-blue-400/50">+45 31 87 83 09</a></li>
+              <li><strong>Location:</strong> Aalborg, Denmark (remote/onsite)</li>
             </ul>
           </div>
           <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
             <input type="hidden" name="form-name" value="contact" />
             <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-            <!-- Replace the action with your Formspree/Netlify endpoint -->
-            <div>
-              <label for="name" class="block text-sm font-medium">Name</label>
-              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400" />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium">Email</label>
-              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400" />
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium">Project / Message</label>
-              <textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3 shadow-inner focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
-            </div>
-            <button type="submit" class="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400">Send</button>
-            <p class="text-xs text-slate-400">No spam. Your details are used only to contact you about this inquiry.</p>
+            <div><label for="name" class="block text-sm font-medium">Name</label><input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3" /></div>
+            <div><label for="email" class="block text-sm font-medium">Email</label><input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3" /></div>
+            <div><label for="message" class="block text-sm font-medium">Project / Message</label><textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded-xl border border-white/10 bg-base-800/70 px-4 py-3"></textarea></div>
+            <button type="submit" class="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500">Send</button>
           </form>
         </div>
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="border-t border-white/10 py-8">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
-      <div>© <span id="year"></span> Mohammad Hadi Mehdizavareh</div>
+      <div>© <span id="year"></span> Hadi Mehdizavareh</div>
       <div class="flex items-center gap-4">
-        <a class="hover:text-slate-200" href="https://www.linkedin.com/in/hadimehdizavareh/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-        <a class="hover:text-slate-200" href="https://github.com/zavareh89" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a class="hover:text-slate-200" href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">Scholar</a>
-        <a class="hover:text-slate-200" href="https://www.kaggle.com/zavareh89" target="_blank" rel="noopener" aria-label="Kaggle">Kaggle</a>
+        <a href="https://www.linkedin.com/in/hadimehdizavareh/" target="_blank" class="hover:text-slate-200">LinkedIn</a>
+        <a href="https://github.com/zavareh89" target="_blank" class="hover:text-slate-200">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=-PwiG1oAAAAJ" target="_blank" class="hover:text-slate-200">Scholar</a>
+        <a href="https://www.kaggle.com/zavareh89" target="_blank" class="hover:text-slate-200">Kaggle</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
